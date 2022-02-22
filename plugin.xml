@@ -52,6 +52,8 @@
 
   <!-- ios -->
   <platform name="ios">
+    <preference name="IOS_GOOGLE_SIGNIN_POD_VERSION" default="~> 5.0.2" />
+    <preference name="IOS_GOOGLE_UTILITIES_POD_VERSION" default="~> 7.2.2" />
 
     <config-file target="config.xml" parent="/*">
       <feature name="GooglePlus">
@@ -107,8 +109,8 @@
         <source url="https://cdn.cocoapods.org/"/>
       </config>
       <pods use-frameworks="true">
-        <pod name="GoogleSignIn" spec="~> 5.0.2"/>
-        <pod name="GoogleUtilities" spec="~> 7.2.2"/>
+        <pod name="GoogleSignIn" spec="$IOS_GOOGLE_SIGNIN_POD_VERSION"/>
+        <pod name="GoogleUtilities" spec="$IOS_GOOGLE_UTILITIES_POD_VERSION"/>
       </pods>
     </podspec>
 
